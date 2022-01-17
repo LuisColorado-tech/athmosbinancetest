@@ -1,11 +1,13 @@
 from models.base_model import BaseModel, Base
-from sqlalchemy import Column, String, Integer
+from sqlalchemy import Column, String, Integer, DateTime
 
 
 class Coin(BaseModel, Base):
     __tablename__ = 'coin'
 
-    t = Column(String(50))
+    id = Column(Integer, primary_key=True)
+    name = Column(String(128))
+    E = Column(DateTime)
     t = Column(String(50))
     T = Column(String(50))
     s = Column(String(50))

@@ -10,6 +10,7 @@ pre-commit = "*"
 pytest = "*"
 pytest-cov = "*"
 debugpy = "*"
+flask-swagger-ui = "*"
 
 [packages]
 Flask = "*"

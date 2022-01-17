@@ -28,7 +28,7 @@ def create():
     coin  = Coin(**coin_in)
     coin.save()
 
-    return make_response(json.dumps(coin.to_dict()), 200)
+    return make_response({"vea papá": "todo bien"}, 200)
 
 # @app.route('/', methods=['GET'] )
 # def getall():

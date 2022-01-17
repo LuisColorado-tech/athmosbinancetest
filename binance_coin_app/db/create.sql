@@ -1,1 +1,44 @@
-CREATE DATABASE coin_dev;
+CREATE DATABASE db_dev;
+
+-- CREATE TABLE coin (
+--   id PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--   name varchar(50),
+--   E DATETIME,
+--   t varchar(50),
+--   T varchar(50),
+--   s varchar(50),
+--   i varchar(50),
+--   f varchar(50),
+--   L varchar(50),
+--   o varchar(50),
+--   c varchar(50),
+--   h varchar(50),
+--   l varchar(50),
+--   v varchar(50),
+--   n varchar(50),
+--   x varchar(50),
+--   q varchar(50),
+--   V varchar(50),
+--   Q varchar(50),
+--   B varchar(50),
+-- );
+
+-- ALTER TABLE coin ADD name varchar(50);
+-- ALTER TABLE coin ADD E DATETIME;
+-- ALTER TABLE coin ADD t varchar(50);
+-- ALTER TABLE coin ADD T varchar(50);
+-- ALTER TABLE coin ADD s varchar(50);
+-- ALTER TABLE coin ADD i varchar(50);
+-- ALTER TABLE coin ADD f varchar(50);
+-- ALTER TABLE coin ADD L varchar(50);
+-- ALTER TABLE coin ADD o varchar(50);
+-- ALTER TABLE coin ADD c varchar(50);
+-- ALTER TABLE coin ADD h varchar(50);
+-- ALTER TABLE coin ADD l varchar(50);
+-- ALTER TABLE coin ADD v varchar(50);
+-- ALTER TABLE coin ADD n varchar(50);
+-- ALTER TABLE coin ADD x varchar(50);
+-- ALTER TABLE coin ADD q varchar(50);
+-- ALTER TABLE coin ADD V varchar(50);
+-- ALTER TABLE coin ADD Q varchar(50);
+-- ALTER TABLE coin ADD B varchar(50);

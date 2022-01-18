@@ -1,0 +1,43 @@
+version: "3.2"
+
+services:
+  BTCUSDT:
+    image: btcusdt-service
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: bash -c "python3 ./BTCUSDT/BTCUSDT.py"
+    volumes:
+      - ../BTCUSDT/:/usr/src/websockets/BTCUSDT/
+    networks:
+      - coin
+
+  ETHUSDT:
+    image: ethusdt-service
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: python3 ./ETHUSDT/ETHUSDT.py
+    volumes:
+      - ../ETHUSDT/:/usr/src/websockets/ETHUSDT/
+    networks:
+      - coin
+
+  DOGEUSDT:
+    image: dogeusdt-service
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: python3 ./DOGEUSDT/DOGEUSDT.py
+    volumes:
+      - ../DOGEUSDT/:/usr/src/websockets/DOGEUSDT/
+    networks:
+      - coin
+
+volumes:
+  websockets_coin:
+    external: true
+
+networks:
+  coin:
+    external: true

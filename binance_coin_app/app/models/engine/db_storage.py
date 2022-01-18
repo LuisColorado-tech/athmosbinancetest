@@ -24,7 +24,8 @@ class DBStorage:
         """
         ...
         """
-        self.__session = sessionmaker(bind=self.__engine)
+        Session = sessionmaker(bind=self.__engine)
+        self.__session = Session()
         if obj:
             self.__session.add(obj)
             self.__session.commit()

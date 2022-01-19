@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 # from flask_restful import Resource, Api
 import json
 
-from models.coin_in_db import Coin
+"""from models.coin_in_db import Coin"""
 from flask_swagger_ui import get_swaggerui_blueprint
 
 

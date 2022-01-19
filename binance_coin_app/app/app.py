@@ -73,7 +73,6 @@ def create():
             v=data['v'],
             n=data['n'],
             x=data['x'],
-            q=data['q'],
             vv=data['vv'],
             q=data['q'],
             b=data['b']
